@@ -15,32 +15,29 @@
 }
 
 .header-content {
-  height: 100%; 
+  height: 100%;
   display: flex;
 }
-.header-content h2{
+.header-content h2 {
   font-size: 3rem;
   margin: auto;
   color: whitesmoke;
   font-family: sans-serif;
-
-
-
 }
 
 /* css for header ends here */
 
 /* css for total start here */
-.Total-section
-{
+.Total-section {
   display: flex;
   justify-content: space-around;
-  border: 2px solid thistle;
   width: 30%;
   padding: 2%;
   border-radius: 15px;
   margin: auto;
   text-align: center;
+  background: #e68330;
+  color: whitesmoke;
 }
 /* css for total end here */
 
@@ -70,9 +67,8 @@
   .header-section {
     height: 30vh;
   }
-  .header-content h2{
+  .header-content h2 {
     font-size: 4rem;
   }
-
 }
 /* Responsiveness start here */

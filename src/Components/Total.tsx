@@ -9,7 +9,7 @@ export const Total: React.FC = () => {
       </div>
       <div>
         <div>Total Question</div>
-        <div>2k+</div>
+        <div>2000+</div>
       </div>
     </div>
   )
