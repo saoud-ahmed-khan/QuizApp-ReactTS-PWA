@@ -1,76 +1,78 @@
-.app
-{
+.app {
   background-color: rgb(35, 40, 60);
   width: 100%;
   height: 100vh;
 }
 /* css for header start here */
 
-.header-section
-{
-  position: relative;
+.header-section {
+  margin: 0 auto 0 auto;
   width: 100%;
+  background: rgb(45, 65, 89);
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
   height: 15vh;
+}
+
+.header-content {
+  height: 100%; 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
-.header-section:before
-{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background:rgb(45, 65, 89);
-  border-radius: 00 50% 50%/0 0 100% 100%;
-  transform: scaleX(1.3);
-}
-.header-content
-{
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
-  max-width: 900px;
-  text-align: center;
-  color:whitesmoke;
-  font-family:sans-serif;
+.header-content h2{
   font-size: 3rem;
+  margin: auto;
+  color: whitesmoke;
+  font-family: sans-serif;
+
+
+
 }
+
+/* css for header ends here */
+
+/* css for total start here */
+.Total-section
+{
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid thistle;
+  width: 30%;
+  padding: 2%;
+  border-radius: 15px;
+  margin: auto;
+  text-align: center;
+}
+/* css for total end here */
+
+/* Responsiveness start here */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .header-section
-  {
+  .header-section {
     height: 20vh;
   }
 }
-
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px){
-  .header-section
-  {
+@media only screen and (min-width: 992px) {
+  .header-section {
     height: 25vh;
   }
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .header-section
-  {
+  .header-section {
     height: 30vh;
+  }
+  .header-content h2{
+    font-size: 4rem;
   }
 
 }
-/* css for header ends here */
+/* Responsiveness start here */
