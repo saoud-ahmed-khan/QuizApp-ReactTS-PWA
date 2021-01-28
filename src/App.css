@@ -39,6 +39,23 @@
   background: #e68330;
   color: whitesmoke;
 }
+.Total-sub
+{
+  border-right: 1px solid whitesmoke;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Total-sub2
+{
+  width: 50%;
+}
+.Total-digits{
+  font-size:2rem;
+  margin-top: 2%;
+}
+
 /* css for total end here */
 
 /* Responsiveness start here */
