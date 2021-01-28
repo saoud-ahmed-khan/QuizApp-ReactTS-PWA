@@ -38,21 +38,21 @@
   text-align: center;
   background: #e68330;
   color: whitesmoke;
+  margin-top: 2%;
 }
-.Total-sub
-{
+
+.Total-sub {
   border-right: 1px solid whitesmoke;
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.Total-sub2
-{
+.Total-sub2 {
   width: 50%;
 }
-.Total-digits{
-  font-size:2rem;
+.Total-digits {
+  font-size: 2rem;
   margin-top: 2%;
 }
 
@@ -62,21 +62,35 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .Total-section {
+    width: 80%;
+    margin-top: 5%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .Total-section {
+    width: 80%;
+    margin-top: 5%;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .header-section {
     height: 20vh;
   }
+  .Total-section {
+    width: 45%;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .header-section {
     height: 25vh;
+  }
+  .Total-section {
+    width: 35%;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -86,6 +100,10 @@
   }
   .header-content h2 {
     font-size: 4rem;
+  }
+  .Total-section {
+    width: 30%;
+    margin-top: 2%;
   }
 }
 /* Responsiveness start here */

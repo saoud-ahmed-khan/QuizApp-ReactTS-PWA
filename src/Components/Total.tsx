@@ -5,11 +5,11 @@ export const Total: React.FC = () => {
     <div className="Total-section">
       <div className="Total-sub">
         <div>Total Catogories</div>
-        <div className="Total-digits">24</div>
+        <div className="Total-digits">25 +</div>
       </div>
       <div className="Total-sub2">
         <div>Total Question</div>
-        <div className="Total-digits">2000+</div>
+        <div className="Total-digits">1987 +</div>
       </div>
     </div>
   )
