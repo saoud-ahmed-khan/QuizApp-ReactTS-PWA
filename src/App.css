@@ -55,8 +55,30 @@
   font-size: 2rem;
   margin-top: 2%;
 }
-
 /* css for total end here */
+
+/* css for categories start here */
+.cat-main
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1%;
+ 
+}
+.cat-sub
+{
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: space-between;
+  border: 1px solid violet;
+  padding: 1%;
+}
+/* css for categories end here */
+
+
+
 
 /* Responsiveness start here */
 
@@ -66,6 +88,11 @@
     width: 80%;
     margin-top: 5%;
   }
+  .cat-sub
+  {
+    width: 80%;
+  }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

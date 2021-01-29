@@ -20,8 +20,7 @@ import { AiFillCar } from "react-icons/ai";
 export const Categories: React.FC<Category> = ({Catname,logo}) => {
 
     return (
-        <div>
-            <div>
+        <div className="cat-sub">
                 <IconContext.Provider value={{ color: '#e68330', size: '50px' }}>
                     {logo==="GiAmericanFootballHelmet" ? <GiAmericanFootballHelmet/> :null}
                     {logo==="ImBook"? <ImBook/>:null}
@@ -32,7 +31,7 @@ export const Categories: React.FC<Category> = ({Catname,logo}) => {
 
 
                 </IconContext.Provider>
-            </div>
+            
     <div>{Catname}</div>
 
                     
