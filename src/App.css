@@ -2,6 +2,8 @@
   background-color: rgb(35, 40, 60);
   width: 100%;
   height: 100vh;
+  color: whitesmoke;
+
 }
 /* css for header start here */
 
@@ -21,7 +23,6 @@
 .header-content h2 {
   font-size: 3rem;
   margin: auto;
-  color: whitesmoke;
   font-family: sans-serif;
 }
 
@@ -37,7 +38,6 @@
   margin: auto;
   text-align: center;
   background: #e68330;
-  color: whitesmoke;
   margin-top: 2%;
 }
 
@@ -70,10 +70,11 @@
 {
   display: flex;
   align-items: center;
-  width: 30%;
+  width: 25%;
   justify-content: space-between;
   border: 1px solid violet;
   padding: 1%;
+  font-size: larger;
 }
 /* css for categories end here */
 
@@ -91,6 +92,7 @@
   .cat-sub
   {
     width: 80%;
+    
   }
 
 }
