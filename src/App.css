@@ -39,6 +39,7 @@
   text-align: center;
   background: #e68330;
   margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .Total-sub {
@@ -75,6 +76,8 @@
   border: 1px solid violet;
   padding: 1%;
   font-size: larger;
+  background-color: rgb(45, 65, 89);
+  margin-bottom: 1%;
 }
 /* css for categories end here */
 
@@ -93,6 +96,9 @@
   {
     width: 80%;
     
+  }
+  .cat-main{
+    height: 70vh;
   }
 
 }
