@@ -12,14 +12,13 @@ export const Categories: React.FC<Category> = ({Catname,logo}) => {
             <div>
                 <IconContext.Provider value={{ color: '#e68330', size: '50px' }}>
                     {
-                        if (logo===) {
-                            
-                        }
+                        logo==="GiAmericanFootballHelmet" ? <GiAmericanFootballHelmet/> :null
                     }
                 </IconContext.Provider>
             </div>
     <div>{Catname}</div>
-    
+
+                    
 
         </div>
     )
