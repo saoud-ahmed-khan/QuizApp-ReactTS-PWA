@@ -1,8 +1,8 @@
 .app {
   background-color: rgb(35, 40, 60);
   width: 100%;
-  height: 100vh;
   color: whitesmoke;
+  text-align: center;
 
 }
 /* css for header start here */
@@ -72,12 +72,28 @@
   display: flex;
   align-items: center;
   width: 25%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 1px solid violet;
   padding: 1%;
   font-size: larger;
   background-color: rgb(45, 65, 89);
   margin-bottom: 1%;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+
+}
+.cat-sub:hover
+{
+  transform: scale(1.03); 
+}
+
+.cat-sub .div2 
+{
+  width: 70%;
+}
+.cat-sub .div1
+{
+  width: 20%;
 }
 /* css for categories end here */
 
@@ -95,11 +111,10 @@
   .cat-sub
   {
     width: 80%;
+    margin-bottom: 1%;
     
   }
-  .cat-main{
-    height: 70vh;
-  }
+ 
 
 }
 
@@ -108,6 +123,12 @@
   .Total-section {
     width: 80%;
     margin-top: 5%;
+  }
+  .cat-sub
+  {
+    width: 80%;
+    margin-bottom: 2%;
+    
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */

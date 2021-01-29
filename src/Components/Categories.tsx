@@ -21,6 +21,7 @@ export const Categories: React.FC<Category> = ({Catname,logo}) => {
 
     return (
         <div className="cat-sub">
+               <div className="div1" >
                 <IconContext.Provider value={{ color: '#e68330', size: '50px' }}>
                     {logo==="GiAmericanFootballHelmet" ? <GiAmericanFootballHelmet/> :null}
                     {logo==="ImBook"? <ImBook/>:null}
@@ -31,8 +32,8 @@ export const Categories: React.FC<Category> = ({Catname,logo}) => {
 
 
                 </IconContext.Provider>
-            
-    <div>{Catname}</div>
+                </div>
+    <div className="div2">{Catname}</div>
 
                     
 
