@@ -74,7 +74,7 @@
   align-items: center;
   width: 25%;
   justify-content: space-evenly;
-  border: 1px solid violet;
+  border-radius: 3px;
   padding: 1%;
   font-size: larger;
   background-color: rgb(45, 65, 89);
