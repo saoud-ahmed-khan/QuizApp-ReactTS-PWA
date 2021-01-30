@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react'
 import axios from 'axios';
 
-interface IPost {
+export interface IPost {
     category:string,
     correct_answer:string,
     difficulty:string,

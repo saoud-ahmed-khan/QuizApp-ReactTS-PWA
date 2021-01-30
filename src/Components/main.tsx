@@ -14,9 +14,10 @@ export const Main: React.FC = () => {
                     <Total />
                     <CategiriesData />
                 </div>}
+                {start?
                 <div>
                     <Questions/>
-                </div>
+                </div>:null}
 
         </div>
     )
