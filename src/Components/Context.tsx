@@ -1,4 +1,14 @@
 import React, { createContext, useState } from 'react'
+import axios from 'axios';
+
+interface IPost {
+    incorrect_answers:string[],
+    question:string,
+    correct_answer:string,
+
+  }
+  const defaultProps:IPost[] = [];
+
 export interface ContextDatatype
 {
     start: boolean,
@@ -13,7 +23,16 @@ let data:ContextDatatype=
 export const Cotext= createContext<ContextDatatype>(data)
 
 export const Context:React.FC = ({children}) => {
+    const [posts, setPosts]: [IPost[], (posts: IPost[]) => void] = React.useState(defaultProps);
     const [start,setStart]=useState<boolean>(false)
+    React.useEffect(() => {
+        axios
+          .get<IPost[]>('https://opentdb.com/api.php?amount=10&type=multiple')
+          .then(response => {setPosts(response.data)});
+          console.log('====================================');
+          console.log(posts);
+          console.log('====================================');
+      },[]);
     return (
         <Cotext.Provider value={{start,setStart}}>
             {children}
