@@ -12,8 +12,8 @@ function App() {
   return (
 
     <div className="app">
+        <Context>
       <Header />
-      <Context>
        <Main/>
       </Context>
     </div>

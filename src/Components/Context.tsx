@@ -23,6 +23,9 @@ export interface ContextDatatype
     posts:IPost[],
     num:number,
     setNum:React.Dispatch<React.SetStateAction<number>>,
+    header:string,
+    setHeader:React.Dispatch<React.SetStateAction<string>>,
+    
 
 
 
@@ -39,6 +42,11 @@ let data:ContextDatatype=
     posts:[],
     num:0,
     setNum:(Total: React.SetStateAction<number>) => null,
+    header:"Quiz App",
+    setHeader:(Total: React.SetStateAction<string>) => null,
+
+
+
 }
 export const Cotext= createContext<ContextDatatype>(data)
 
@@ -49,12 +57,13 @@ export const Context:React.FC = ({children}) => {
     const [start,setStart]=useState<boolean>(false)
     const [category,setcategory]= useState<string>("a")
     const [num,setNum]=useState<number>(0)
+    const [header,setHeader]=useState<string>("Quiz App")
     React.useEffect(() => {
         axios.get(`https://opentdb.com/api.php?amount=10&category=${category}&type=multiple`)
         .then(response => {setPosts(response.data.results) ; setLoading(false)});
       },[category]);
     return (
-        <Cotext.Provider value={{start,setStart,setcategory,category,posts,setNum,num}}>
+        <Cotext.Provider value={{start,setStart,setcategory,category,posts,setNum,num,setHeader,header}}>
             {children}
         </Cotext.Provider>
     )

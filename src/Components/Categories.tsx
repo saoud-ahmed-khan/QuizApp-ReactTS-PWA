@@ -10,9 +10,9 @@ import { AiFillCar } from "react-icons/ai";
 import { Cotext } from "./Context";
 export const Categories: React.FC<Category> = ({ Catname, logo, id }) => {
     const context = React.useContext(Cotext)
-    const { setStart, setcategory } = context
+    const { setStart, setcategory, setHeader } = context
     return (
-        <div className="cat-sub" onClick={() => { setStart(true); setcategory(id) }}>
+        <div className="cat-sub" onClick={() => { setStart(true); setcategory(id); setHeader(Catname) }}>
             <div className="div1" >
                 <IconContext.Provider value={{ color: '#e68330', size: '50px' }}>
                     {logo === "GiAmericanFootballHelmet" ? <GiAmericanFootballHelmet /> : null}
