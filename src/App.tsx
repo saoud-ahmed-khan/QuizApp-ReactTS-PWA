@@ -1,25 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import { CategiriesData } from './Components/CategiriesData';
+import { Context } from './Components/Context';
 import { Header } from "./Components/Header";
-import { Total } from './Components/Total';
+import { Main } from './Components/main';
 
 
 
 
 function App() {
+  
   return (
 
     <div className="app">
-      <Header/>
-      <Total/>
-      <CategiriesData/>
-
-
-
-
-
-     
+      <Header />
+      <Context>
+       <Main/>
+      </Context>
     </div>
   );
 }

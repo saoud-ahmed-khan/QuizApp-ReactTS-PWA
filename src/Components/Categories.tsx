@@ -7,36 +7,23 @@ import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import { MdComputer } from "react-icons/md";
 import { GiMaterialsScience } from "react-icons/gi";
 import { AiFillCar } from "react-icons/ai";
-
-
-
-
-
-
-
-
-
-
-export const Categories: React.FC<Category> = ({Catname,logo}) => {
-
+import { Cotext } from "./Context";
+export const Categories: React.FC<Category> = ({ Catname, logo }) => {
+    const context = React.useContext(Cotext)
+    const { setStart } = context
     return (
-        <div className="cat-sub">
-               <div className="div1" >
+        <div className="cat-sub" onClick={() => { setStart(true) }}>
+            <div className="div1" >
                 <IconContext.Provider value={{ color: '#e68330', size: '50px' }}>
-                    {logo==="GiAmericanFootballHelmet" ? <GiAmericanFootballHelmet/> :null}
-                    {logo==="ImBook"? <ImBook/>:null}
-                    {logo==="GiPerspectiveDiceSixFacesRandom" ? <GiPerspectiveDiceSixFacesRandom/> :null}
-                    {logo==="MdComputer" ? <MdComputer/> :null}
-                    {logo==="GiMaterialsScience" ? <GiMaterialsScience/> :null}
-                    {logo==="AiFillCar" ? <AiFillCar/> :null}
-
-
+                    {logo === "GiAmericanFootballHelmet" ? <GiAmericanFootballHelmet /> : null}
+                    {logo === "ImBook" ? <ImBook /> : null}
+                    {logo === "GiPerspectiveDiceSixFacesRandom" ? <GiPerspectiveDiceSixFacesRandom /> : null}
+                    {logo === "MdComputer" ? <MdComputer /> : null}
+                    {logo === "GiMaterialsScience" ? <GiMaterialsScience /> : null}
+                    {logo === "AiFillCar" ? <AiFillCar /> : null}
                 </IconContext.Provider>
-                </div>
-    <div className="div2">{Catname}</div>
-
-                    
-
+            </div>
+            <div className="div2">{Catname}</div>
         </div>
     )
 }
