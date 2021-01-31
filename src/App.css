@@ -132,9 +132,34 @@
 
 
 }
-.ques-sub:hover
+.qbdiv1:hover
 {
-  transform: scale(1.04); 
+  transform: scale(1.1); 
+}
+.ex1 {
+  pointer-events: none;
+}
+.qbdiv1
+{
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 85%;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 1%;
+  font-size: larger;
+  background-color: rgb(45, 65, 89);
+  margin: auto;
+  margin-bottom: 1%;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  text-align: center;
+  transition: all .1s ease-in-out;
+  border: none;
+  color: whitesmoke;
 }
 .qdiv1
 {

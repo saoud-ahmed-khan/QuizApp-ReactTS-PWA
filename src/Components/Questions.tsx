@@ -1,5 +1,5 @@
 import { log } from 'console';
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Cotext, IPost } from "./Context";
 import ProgressBar from "@ramonak/react-progress-bar";
 export const Questions = () => {
@@ -7,6 +7,8 @@ export const Questions = () => {
     const { posts, num, setNum, marks, setMarks } = context
     const arrayShuffle = (array: any[]) => [...array].sort(() => Math.random() - 0.5)
     let add: number = 0
+    var ans: string = ""
+    const [Aans, SetAans] = useState<boolean>(false)
     return (
         <div className="ques-ques">
             <div className="ques-top">
@@ -22,17 +24,21 @@ export const Questions = () => {
                         </div>
                         {
                             arrayShuffle([...post.incorrect_answers, post.correct_answer]).map((a) => (
-                                <div className="ques-sub" onClick={() => { a == post.correct_answer ?:}}>
-                                    <div className="qdiv1">{++add}</div>
-                                    <div className="qdiv2">{a}</div>
+                                <div>
+                                    <button onClick={() => ((ans = a), SetAans(true))} className="qbdiv1"><span className="qdiv1">{++add}</span><span className="qdiv2">{a}</span></button>
                                 </div>
+
                             ))
                         }
 
+                        {ans ? <button className="ques-btn" onClick={() => ((post.correct_answer == ans ? setMarks((prev) => prev + 1) : null), setNum((prev) => prev + 1), SetAans(false))}>Submit</button> : null}
+
+
                     </div>) : (null)))
+
             }
-            <button className="ques-btn" onClick={() => { setNum((prev) => prev + 1) }}>Submit</button>
-        </div>
+            { console.log(ans)}
+        </div >
     )
 }
 

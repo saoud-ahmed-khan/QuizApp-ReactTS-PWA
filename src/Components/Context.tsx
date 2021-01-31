@@ -10,6 +10,7 @@ export interface IPost {
     type:string,
     
     
+    
 
   }
   const defaultProps:IPost[] = [];
