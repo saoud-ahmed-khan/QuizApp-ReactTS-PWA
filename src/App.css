@@ -96,9 +96,110 @@
 {
   width: 20%;
 }
+.ques-ans
+{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.ques-ans button .c1{
+  width: 10%;
+
+}
+.ques-ans button .c2{
+  width: 90%;
+
+}
+.ques-sub
+{
+  display: flex;
+  align-items: center;
+  width: 85%;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 1%;
+  font-size: larger;
+  background-color: rgb(45, 65, 89);
+  margin: auto;
+  margin-bottom: 1%;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  text-align: center;
+  transition: all .1s ease-in-out;
+
+
+}
+.ques-sub:hover
+{
+  transform: scale(1.04); 
+}
+.qdiv1
+{
+width: 8%;
+padding: 2%;
+margin: auto;
+border: 1px solid #e68330;
+border-radius: 50%;
+background-color:#e68330 ;
+margin: auto;
+}
+.qdiv2
+{
+  width: 90%;
+  margin: auto;
+}
+
 /* css for categories end here */
+/* css for Question starts from here */
+.ques-btn
+{
+  width: 85%;
+  background-color:#e68330 ;
+  padding: 2%;
+  outline: none;
+  border: none;
+  margin-top: 1%;
+  border-radius: 5px;
+  font-size: larger;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
 
+}
+.ques-btn:hover
+{
+  transform: scale(1.04); 
 
+}
+.ques-ques
+{
+  margin: auto;
+  margin-top: 3%;
+  padding: 1%;
+  font-size: larger;
+  
+}
+.ques-top
+{
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+  border-bottom: 2px solid whitesmoke;
+  padding-bottom: 1%;
+
+  
+  
+}
+.ques-progress
+{
+  width: 60%;
+}
+/* css for questions end here */
 
 
 /* Responsiveness start here */
@@ -140,11 +241,15 @@
   .Total-section {
     width: 45%;
   }
-  .cat-sub
+  .cat-sub  
   {
     width: 40%;
     margin-bottom: 1%;
     
+  }
+  .ques-ques
+  {
+    width: 50%;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -160,6 +265,10 @@
     width: 25%;
     margin-bottom: 1%;
     
+  }
+  .ques-ques
+  {
+    width: 50%;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -180,5 +289,13 @@
     margin-bottom: 1%;
     
   }
+  .ques-ques
+  {
+    width: 50%;
+  }
+  .qdiv1
+  {
+    
+}
 }
 /* Responsiveness start here */
