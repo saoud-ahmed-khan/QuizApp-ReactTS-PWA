@@ -8,7 +8,7 @@ export interface IPost {
     incorrect_answers:string[],
     question:string,
     type:string,
-    
+
     
     
 
@@ -57,20 +57,26 @@ export const Cotext= createContext<ContextDatatype>(data)
 
 export const Context:React.FC = ({children}) => {
     const [posts, setPosts]: [IPost[], (posts: IPost[]) => void] = React.useState(defaultProps);
-    const [Data,SetData]=useState<{response_code:number, results:[]}>()
-    const [loading, setLoading]: [boolean, (loading: boolean) => void] = React.useState<boolean>(true);
     const [start,setStart]=useState<boolean>(false)
     const [category,setcategory]= useState<string>("a")
     const [num,setNum]=useState<number>(0)
     const [header,setHeader]=useState<string>("Quiz App")
-    const [marks,setMarks]=useState<number>(0)
+    const [marks,setMarks]=useState(0)
+
     React.useEffect(() => {
+        setMarks(0)
+        setNum(0)
         axios.get(`https://opentdb.com/api.php?amount=10&category=${category}&type=multiple`)
-        .then(response => {setPosts(response.data.results) ; setLoading(false)});
+        .then(response => {setPosts(response.data.results) });
+       
+        
+      
+        
       },[category]);
     return (
         <Cotext.Provider value={{start,setStart,setcategory,category,posts,setNum,num,setHeader,header,marks,setMarks}}>
             {children}
+            
         </Cotext.Provider>
     )
 }

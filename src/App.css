@@ -4,10 +4,8 @@
   color: whitesmoke;
   text-align: center;
   height: 100vh;
-
 }
-/* css for header start here */
-
+/*css for header start here*/
 .header-section {
   margin: 0 auto 0 auto;
   width: 100%;
@@ -16,20 +14,16 @@
   border-bottom-left-radius: 50% 50%;
   height: 15vh;
 }
-
 .header-content {
   height: 100%;
   display: flex;
 }
 .header-content h2 {
-  font-size: 3rem;
   margin: auto;
   font-family: sans-serif;
 }
-
-/* css for header ends here */
-
-/* css for total start here */
+/*css for header ends here*/
+/*css for total start here*/
 .Total-section {
   display: flex;
   justify-content: space-around;
@@ -58,18 +52,14 @@
   margin-top: 2%;
 }
 /* css for total end here */
-
 /* css for categories start here */
-.cat-main
-{
+.cat-main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 1%;
- 
 }
-.cat-sub
-{
+.cat-sub {
   display: flex;
   align-items: center;
   width: 25%;
@@ -80,24 +70,19 @@
   background-color: rgb(45, 65, 89);
   margin-bottom: 1%;
   cursor: pointer;
-  transition: all .1s ease-in-out;
-
+  transition: all 0.1s ease-in-out;
 }
-.cat-sub:hover
-{
-  transform: scale(1.04); 
+.cat-sub:hover {
+  transform: scale(1.04);
 }
 
-.cat-sub .div2 
-{
+.cat-sub .div2 {
   width: 70%;
 }
-.cat-sub .div1
-{
+.cat-sub .div1 {
   width: 20%;
 }
-.ques-ans
-{
+.ques-ans {
   width: 85%;
   margin: auto;
   display: flex;
@@ -105,16 +90,13 @@
   text-align: center;
 }
 
-.ques-ans button .c1{
+.ques-ans button .c1 {
   width: 10%;
-
 }
-.ques-ans button .c2{
+.ques-ans button .c2 {
   width: 90%;
-
 }
-.ques-sub
-{
+.ques-sub {
   display: flex;
   align-items: center;
   width: 85%;
@@ -126,21 +108,13 @@
   margin: auto;
   margin-bottom: 1%;
   cursor: pointer;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   text-align: center;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
 
 
-}
-.qbdiv1:hover
-{
-  transform: scale(1.1); 
-}
-.ex1 {
-  pointer-events: none;
-}
-.qbdiv1
-{
+.qbdiv1 {
   display: flex;
   width: 85%;
   justify-content: space-between;
@@ -155,34 +129,30 @@
   margin: auto;
   margin-bottom: 1%;
   cursor: pointer;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   text-align: center;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   border: none;
   color: whitesmoke;
 }
-.qdiv1
-{
-width: 8%;
-padding: 2%;
-margin: auto;
-border: 1px solid #e68330;
-border-radius: 50%;
-background-color:#e68330 ;
-margin: auto;
+.qdiv1 {
+  width: 8%;
+  padding: 2%;
+  margin: auto;
+  border: 1px solid #e68330;
+  border-radius: 50%;
+  background-color: #e68330;
+  margin: auto;
 }
-.qdiv2
-{
+.qdiv2 {
   width: 90%;
   margin: auto;
 }
-
 /* css for categories end here */
 /* css for Question starts from here */
-.ques-btn
-{
-  width: 85%;
-  background-color:#e68330 ;
+.ques-btn {
+
+  background-color: #e68330;
   padding: 2%;
   outline: none;
   border: none;
@@ -191,24 +161,18 @@ margin: auto;
   font-size: larger;
   color: whitesmoke;
   cursor: pointer;
-  transition: all .1s ease-in-out;
-
+  transition: all 0.1s ease-in-out;
 }
-.ques-btn:hover
-{
-  transform: scale(1.04); 
-
+.ques-btn:hover {
+  transform: scale(1.04);
 }
-.ques-ques
-{
+.ques-ques {
   margin: auto;
-  margin-top: 3%;
+  margin-top: 0%;
   padding: 1%;
   font-size: larger;
-  
 }
-.ques-top
-{
+.ques-top {
   display: flex;
   flex-direction: row;
   width: 85%;
@@ -216,17 +180,17 @@ margin: auto;
   justify-content: space-between;
   border-bottom: 2px solid whitesmoke;
   padding-bottom: 1%;
-
-  
-  
 }
-.ques-progress
-{
+.ques-progress {
   width: 60%;
 }
 /* css for questions end here */
-
-
+.ending{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 3%;
+}
 /* Responsiveness start here */
 
 /* Extra small devices (phones, 600px and down) */
@@ -235,15 +199,19 @@ margin: auto;
     width: 80%;
     margin-top: 5%;
   }
-  .cat-sub
-  {
+  .cat-sub {
     width: 80%;
     margin-bottom: 1%;
-    
   }
- 
-
+  .ques-btn {
+    width: 80%;
+  }
+  .header-content h2
+  {
+    font-size: 25px;
+  }
 }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -251,29 +219,38 @@ margin: auto;
     width: 80%;
     margin-top: 5%;
   }
-  .cat-sub
-  {
+  .cat-sub {
     width: 80%;
     margin-bottom: 2%;
-    
+  }
+  .ques-btn {
+    width: 80%;
+  }
+  .header-content h2
+  {
+    font-size: 35px;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .header-content h2
+  {
+    font-size: 45px;
+  }
   .header-section {
     height: 20vh;
   }
   .Total-section {
     width: 45%;
   }
-  .cat-sub  
-  {
+  .cat-sub {
     width: 40%;
     margin-bottom: 1%;
-    
   }
-  .ques-ques
-  {
+  .ques-ques {
+    width: 50%;
+  }
+  .ques-btn {
     width: 50%;
   }
 }
@@ -285,15 +262,19 @@ margin: auto;
   .Total-section {
     width: 35%;
   }
-  .cat-sub
-  {
+  .cat-sub {
     width: 25%;
     margin-bottom: 1%;
-    
   }
-  .ques-ques
-  {
+  .ques-ques {
     width: 50%;
+  }
+  .ques-btn {
+    width: 40%;
+  }
+  .header-content h2
+  {
+    font-size: 55px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -308,19 +289,15 @@ margin: auto;
     width: 30%;
     margin-top: 2%;
   }
-  .cat-sub
-  {
+  .cat-sub {
     width: 25%;
     margin-bottom: 1%;
-    
   }
-  .ques-ques
-  {
+  .ques-ques {
     width: 50%;
   }
-  .qdiv1
-  {
-    
-}
+  .ques-btn {
+    width: 35%;
+  }
 }
 /* Responsiveness start here */

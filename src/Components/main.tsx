@@ -9,6 +9,7 @@ export const Main: React.FC = () => {
     const { start } = context
     return (
         <div>
+
             {start ? null :
                 <div>
                     <Total />
@@ -16,6 +17,7 @@ export const Main: React.FC = () => {
                 </div>}
                 {start?
                 <div>
+                    
                     <Questions/>
                 </div>:null}
 
